@@ -14,6 +14,6 @@ app.use(express.json());
 
 app.use('/api/auth',authRoutes);
 app.use('/api/events',eventRoutes);
-// app.use('/api/bookings',bookingRoutes);
+app.use('/api/bookings',bookingRoutes);
 
 module.exports=app;
