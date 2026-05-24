@@ -71,7 +71,7 @@ async function deleteEvent(req,res){
         res.json({message : "Event Deleted Successfully"});
     }
     catch (error){
-        res.status(500).json({error : error.message});
+        res.status(500).json({message : "Server Error",error : error.message});
     }
 }
 
